@@ -18,8 +18,10 @@ jobs:
       node-version: 16
 
    - name: Install Dependencies
+     working-directory: ./
      run: npm install
 
    - name: Run Test
+     working-directory: ./
      run: npm test
 
